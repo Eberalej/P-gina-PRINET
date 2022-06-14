@@ -264,7 +264,7 @@ form.example input[type=text] {
 
 .descripcion i {
     font-size: 100px;
-    /*color: #615f5f;*/
+    color: #615f5f;
     color: linear-gradient(135deg, #6699FF 0%, #FF3366 100%);;
 }
 
