@@ -125,10 +125,8 @@ form.example input[type=text] {
 
 .section-art {
     margin: 20px;
-    flex: 1 1 1;
     display: flex;
     justify-content: space-around;
-    background: rgb(9,112,244);
     background: radial-gradient(circle, rgba(9,112,244,1) 0%, rgba(252,70,107,1) 100%); 
     padding: 20px;
     box-shadow: 1px 2px 7px black;
@@ -265,8 +263,55 @@ form.example input[type=text] {
 .descripcion i {
     font-size: 100px;
     color: #615f5f;
-    color: linear-gradient(135deg, #6699FF 0%, #FF3366 100%);;
+    color: linear-gradient(135deg, #6699FF 0%, #FF3366 100%);
 }
+
+.info {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pie1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 1 1 ;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.redes2 {
+    display: flex;
+    flex-direction: column;
+}
+    .redes2 a {
+        font-size: 25px;
+        color: #615f5f;
+        padding-right: 10px;  
+    }
+
+    .columna3 li {
+        list-style: none;
+        color: #808080;
+        padding-bottom: 25px;
+    }
+
+    .columna3 li i {
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    .pie2 {
+        display: flex;
+        margin: 0%;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        border-top: 1 px solid #242424;
+    }
+
 
 @media (max-width: 1100px) {
     .section-art {
