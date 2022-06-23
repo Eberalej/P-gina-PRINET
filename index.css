@@ -330,8 +330,54 @@ form.example input[type=text] {
         font-weight: 400;
     }
 
+    .mapa{
+        margin-top: 11px;
+        box-shadow: 1px 2px 7px black;
+        width: 100%;
+    }  
+
+/*SLIDER*/
+
+.slider {
+    background-color: #413f3f;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 35px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
 
 
+/*SLIDER*/
 
 @media (max-width: 1100px) {
     .section-art {
