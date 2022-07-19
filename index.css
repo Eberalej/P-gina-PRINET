@@ -13,9 +13,9 @@ body {
 header {
     color: #161616;
     background: rgba(22, 22, 22, 0.9);
-    position: fixed;
+   /* position: fixed;*/
     width: 100%;
-    z-index: 900;
+   /*z-index: 900;*/
     box-shadow: 0 0 30px 0 #000;
 }
 
@@ -119,7 +119,6 @@ form.example input[type=text] {
 .section {
     margin: 0;
     padding: 20px;
-    padding-top: 180px;
     background-color: #131415;
 }
 
@@ -253,6 +252,7 @@ form.example input[type=text] {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .descripcion {
@@ -413,6 +413,34 @@ form.example input[type=text] {
     .section {
         margin: 0;
         padding: 20px;
-        padding-top: 320px;
     }
+    .parrafo-cuerpo1 {
+        width: 80%;
+    }
+    .ventajas2 {
+        width: 95%;
+        flex-direction: column;
+    }
+    .descripcion {
+        width: 80%;
+        padding-bottom: 70px;
+    }
+    .pie1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .info, .redes2, .datos {
+        width: 80%;
+        padding-top: 50px;
+    }
+    .columna2 {
+        display: flex;
+    }
+    .columna3 {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+
 }
