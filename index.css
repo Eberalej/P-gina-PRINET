@@ -10,12 +10,13 @@
 body {
     margin: 0;
 }
+
 header {
     color: #161616;
     background: rgba(22, 22, 22, 0.9);
-   /* position: fixed;*/
+    /* position: fixed;*/
     width: 100%;
-   /*z-index: 900;*/
+    /*z-index: 900;*/
     box-shadow: 0 0 30px 0 #000;
 }
 
@@ -35,6 +36,10 @@ header {
     padding-top: 5px;
 }
 
+.burguer {
+    display: none;
+}
+
 .nav-pages {
     padding: 7px;
 }
@@ -46,11 +51,12 @@ header {
     padding: 10px 10px 10px 20px;
     font-size: 0.9em;
 }
-    .nav-pages a:hover {
-        background-color: rgba(155, 155, 155, 0.1);
-        transition: 0.5s background-color;
-        color: rgb(94, 142, 197);
-    }
+
+.nav-pages a:hover {
+    background-color: rgba(155, 155, 155, 0.1);
+    transition: 0.5s background-color;
+    color: rgb(94, 142, 197);
+}
 
 
 /*Buscador*/
@@ -71,9 +77,9 @@ form.example input[type=text] {
     float: right;
     width: 80%;
     background: #ffffff;
-  }
+}
 
-  form.example button {
+form.example button {
     float: left;
     width: 20%;
     padding: 5px;
@@ -81,20 +87,20 @@ form.example input[type=text] {
     color: white;
     font-size: 17px;
     border: 1px solid grey;
-    border-left: none; 
+    border-left: none;
     border-radius: 0 7px 7px 0;
     cursor: pointer;
-  }
+}
 
-  form.example button:hover {
+form.example button:hover {
     background: #0b7dda;
-  }
-  
-  form.example::after {
+}
+
+form.example::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 /*Buscador*/
 
@@ -126,7 +132,7 @@ form.example input[type=text] {
     margin: 20px;
     display: flex;
     justify-content: space-around;
-    background: radial-gradient(circle, rgba(9,112,244,1) 0%, rgba(252,70,107,1) 100%); 
+    background: radial-gradient(circle, rgba(9, 112, 244, 1) 0%, rgba(252, 70, 107, 1) 100%);
     padding: 20px;
     box-shadow: 1px 2px 7px black;
     border-radius: 15px;
@@ -142,11 +148,11 @@ form.example input[type=text] {
 
 }
 
-    .section-art .article:hover {
-        box-shadow: 0px 4px 13px 2px #242424;
-        transition: all .5s;
-        transform: scale(1.025); 
-    }
+.section-art .article:hover {
+    box-shadow: 0px 4px 13px 2px #242424;
+    transition: all .5s;
+    transform: scale(1.025);
+}
 
 .imagen-article {
     width: 100%;
@@ -154,14 +160,14 @@ form.example input[type=text] {
 }
 
 .article h4 {
-        color: #fff;
-        font-size: 20px;
-        padding: 10px 0 14px 10px;  
-        font-weight: 500; 
-        margin-top: -48px;  
-        background: rgba(9, 28, 78, 0.6);  
-        z-index: 500; 
-        position: relative;       
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0 14px 10px;
+    font-weight: 500;
+    margin-top: -48px;
+    background: rgba(9, 28, 78, 0.6);
+    z-index: 500;
+    position: relative;
 }
 
 .article p {
@@ -278,7 +284,7 @@ form.example input[type=text] {
 .pie1 {
     display: flex;
     justify-content: space-evenly;
-    flex: 1 1 1 ;
+    flex: 1 1 1;
     background-color: #000;
     color: #fff;
     line-height: 1.6;
@@ -288,53 +294,54 @@ form.example input[type=text] {
     display: flex;
     flex-direction: column;
 }
-    .redes2 a {
-        font-size: 25px;
-        color: #615f5f;
-        padding-right: 10px;  
-    }
 
-    .columna3 li {
-        list-style: none;
-        color: #808080;
-        padding-bottom: 25px;
-    }
+.redes2 a {
+    font-size: 25px;
+    color: #615f5f;
+    padding-right: 10px;
+}
 
-    .columna3 li i {
-        padding-right: 20px;
-        font-size: 20px;
-    }
+.columna3 li {
+    list-style: none;
+    color: #808080;
+    padding-bottom: 25px;
+}
 
-    .pie2 {
-        display: flex;
-        margin: 0%;
-        background-color: rgb(0, 0, 0);
-        color: #fff;
-        padding-left: 25px;
-    }
+.columna3 li i {
+    padding-right: 20px;
+    font-size: 20px;
+}
 
-    .pie2 p a {
-        text-decoration: none;
-        color: #615f5f;
-        padding-left: 10px;
-    }
-    
-    .pie2 p a:hover {
-        color: #58aef5;
-        transition: all 0.5s;
-        transform: scale(1.15);
-        display: inline-block;
-    }
+.pie2 {
+    display: flex;
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding-left: 25px;
+}
 
-    .footer h2 {
-        font-weight: 400;
-    }
+.pie2 p a {
+    text-decoration: none;
+    color: #615f5f;
+    padding-left: 10px;
+}
 
-    .mapa{
-        margin-top: 11px;
-        box-shadow: 1px 2px 7px black;
-        width: 100%;
-    }  
+.pie2 p a:hover {
+    color: #58aef5;
+    transition: all 0.5s;
+    transform: scale(1.15);
+    display: inline-block;
+}
+
+.footer h2 {
+    font-weight: 400;
+}
+
+.mapa {
+    margin-top: 11px;
+    box-shadow: 1px 2px 7px black;
+    width: 100%;
+}
 
 /*SLIDER*/
 
@@ -370,6 +377,7 @@ form.example input[type=text] {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
+
     100% {
         -webkit-transform: translateX(calc(-200px * 7));
         transform: translateX(calc(-200px * 7));
@@ -386,6 +394,7 @@ form.example input[type=text] {
         text-align: center;
         flex-direction: column;
     }
+
     .article {
         width: 90%;
     }
@@ -397,48 +406,78 @@ form.example input[type=text] {
         align-items: center;
         text-align: center;
     }
+
     .cuerpo1 {
         flex-direction: column;
     }
+
     .img-impresora {
         width: 90%;
     }
 }
 
 @media (max-width: 450px) {
+
+    .burguer {
+        display: flex;
+        align-items: flex-end;
+        text-align: left;
+        display: contents;
+    }
+
+    #check {
+        display: flex;
+    }
+
+    .bar-btn {
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+
     .pages {
         display: flex;
         flex-direction: column;
     }
+
     .section {
         margin: 0;
         padding: 20px;
     }
+
     .parrafo-cuerpo1 {
         width: 80%;
     }
+
     .ventajas2 {
         width: 95%;
         flex-direction: column;
     }
+
     .descripcion {
         width: 80%;
         padding-bottom: 70px;
     }
+
     .pie1 {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .info, .redes2, .datos {
+
+    .info,
+    .redes2,
+    .datos {
         width: 80%;
         padding-top: 50px;
     }
+
     .columna2 {
         display: flex;
         text-align: left;
         flex-direction: column;
     }
+
     .columna3 {
         display: flex;
         text-align: left;
