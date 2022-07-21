@@ -1,0 +1,420 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url(../Fonts/Ubuntu-Regular.ttf);
+}
+
+* {
+    font-family: 'ubuntu';
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background: rgba(22, 22, 22, 0.95);
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-logo {
+    width: auto;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-pages {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+    z-index: 501;
+}
+
+.nav-pages li {
+    display: none;
+    line-height: 30px;
+    margin: 15px 0;
+    transition: all .5s;
+
+}
+
+.nav-pages li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+.nav-pages li a.active,.nav-pages li a:hover {
+    color: rgb(50, 118, 182);
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.nav-pages {
+    height: 100vh;
+}
+
+#check:checked~.nav-pages li {
+    display: block;
+}
+
+
+.info {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pie1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 1 1;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.redes2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes2 a {
+    font-size: 25px;
+    color: #615f5f;
+    padding-right: 10px;
+}
+
+.columna3 li {
+    list-style: none;
+    color: #808080;
+    padding-bottom: 25px;
+}
+
+.columna3 li i {
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.pie2 {
+    display: flex;
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding-left: 25px;
+}
+
+.pie2 p a {
+    text-decoration: none;
+    color: #615f5f;
+    padding-left: 10px;
+}
+
+.pie2 p a:hover {
+    color: #58aef5;
+    transition: all 0.5s;
+    transform: scale(1.15);
+    display: inline-block;
+}
+
+.footer h2 {
+    font-weight: 400;
+}
+
+
+body {
+    background: url(../ImagenesContacto/Fondo\ Contacto.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor .form .form-header .form-title {
+    font-weight: normal;
+    font-size: 35px;
+    color: #5096e6;
+    text-align: center;
+}
+
+.contenedor .form .form-header .form-title span {
+    color: #fff;
+}
+
+.contenedor .form {
+    background: rgba(0, 0, 0, .6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.contenedor .form .form-label {
+    display: block;
+    color: #5096e6;
+    font-size: 16px;
+    position: relative;
+}
+
+.contenedor .form .form-input, .form-textarea {
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #5096e6;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.contenedor .form .form-textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.contenedor .form .btn-submit {
+    width: 100%;
+    outline: none;
+    background: #1865be;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all .5s easy;
+}
+
+.contenedor .form .btn-submit:hover {
+    background: #3b8ae6;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .nav-pages {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-pages li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-pages li a {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .section-art {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .article {
+        width: 90%;
+    }
+}
+
+@media (max-width: 950px) {
+    .pie1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info, .redes2, .datos {
+        width: 80%;
+        padding-top: 50px;
+    }
+
+    .columna2 {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .columna3 {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .section {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .parrafo-cuerpo1 {
+        width: 80%;
+    }
+
+    .ventajas2 {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .descripcion {
+        width: 80%;
+        padding-bottom: 70px;
+    }
+
+    .pie1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info, .redes2, .datos {
+        width: 80%;
+        padding-top: 50px;
+    }
+
+    .columna2 {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .columna3 {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    .cuerpo1 {
+        flex-direction: column;
+    }
+
+    .img-impresora {
+        width: 90%;
+    }
+
+    .pie1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info, .redes2, .datos {
+        width: 80%;
+        padding-top: 50px;
+    }
+
+    .columna2 {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .columna3 {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .section {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .parrafo-cuerpo1 {
+        width: 80%;
+    }
+
+    .ventajas2 {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .descripcion {
+        width: 80%;
+        padding-bottom: 70px;
+    }
+
+    .pie1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info, .redes2, .datos {
+        width: 80%;
+        padding-top: 50px;
+    }
+
+    .columna2 {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .columna3 {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+
+}
