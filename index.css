@@ -111,8 +111,6 @@ nav {
 .show-btn, .container {
     position: absolute;
     text-align: center;
-    align-items: center;
-    z-index: 501;
 }
 
 input[type="checkbox"]{

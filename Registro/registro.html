@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prinet3D</title>
-    <link rel="stylesheet" href="./contacto.css">
+    <link rel="stylesheet" href="./registro.css">
     <link rel="stylesheet" href="../FontAwesone/fontawesome-free-6.1.1-web/css/all.min.css">
 </head>
 
@@ -24,37 +24,62 @@
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="#">QUIENES SOMOS</a></li>
                 <li><a href="#">SERVICIOS</a></li>
-                <li><a class="active" href="#">CONTACTO</a></li>
+                <li><a href="#">CONTACTO</a></li>
             </ul>
 
         </nav>
 
     </header>
 
-    <section>
-        <div class="contenedor">
-            <form action="" class="form">
-                <div class="form-header">
-                    <h1 class="form-title">C<span>ontacto</span></h1>
+
+    <div class="fondo">
+        <div class="container">
+            <div class="text">Regístrese</div>
+            <form action="#">
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Apellido</label>
+                    </div>
                 </div>
-
-                <label for="nombre" class="form-label">Nombres:</label>
-                <input type="text" id="nombre" class="form-input" placeholder="Escriba su Nombre">
-
-                <label for="direccion" class="form-label">Dirección:</label>
-                <input type="text" id="direccion" class="form-input" placeholder="Escriba su Dirección">
-
-                <label for="correo" class="form-label">Correo electrónico:</label>
-                <input type="email" id="correo" class="form-input" placeholder="Escriba su Correo">
-
-                <label for="mensaje" class="form-label">Mensaje:</label>
-                <textarea name="" id="mensaje" class="form-textarea" placeholder="Escriba su Mensaje" cols="30"
-                    rows="10"></textarea>
-
-                <input type="submit" class="btn-submit" value="Enviar mensaje">
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Correo electrónico</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="password" required>
+                        <div class="underline"></div>
+                        <label for="">Contraseña</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data textarea">
+                        <!--<textarea rows="8" cols="80" required></textarea>
+                         <br />
+                        <div class="underline"></div>
+                        <label for="">Write your message</label>
+                        <br />-->
+                        <div class="form-row submit-btn">
+                            <div class="input-data">
+                                <div class="inner"></div>
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
-    </section>
+    </div>
+
+
 
     <footer class="footer">
         <div class="pie1">
